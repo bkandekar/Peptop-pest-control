@@ -110,21 +110,39 @@
         .section-desc { color: #64748B; font-size: 14px; }
 
         /* Services Grid */
-        .services { background-color: var(--white); }
-        .services-masonry { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-        .service-card { background-color: var(--bg); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column; border: 2px solid transparent; }
-        .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
-        .service-card.tall { grid-row: span 2; }
-        .service-img-container { height: 130px; overflow: hidden; position: relative; }
-        .service-card.tall .service-img-container { height: 210px; }
+        .services { background-color: var(--white); padding: 60px 0; }
+        .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .service-card { background-color: var(--bg); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column; border: 1px solid var(--gray-light); height: 100%; position: relative; }
+        .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+        .service-img-container { height: 180px; overflow: hidden; position: relative; width: 100%; }
         .service-img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
-        .service-card:hover .service-img { transform: scale(1.05); }
-        .service-icon-overlay { position: absolute; bottom: 10px; right: 10px; background-color: var(--white); color: var(--primary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; box-shadow: var(--shadow-sm); }
-        .service-info { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .service-name { font-size: 16px; margin-bottom: 6px; color: var(--secondary); font-weight: 700; }
-        .service-desc { font-size: 12px; color: #64748B; margin-bottom: 12px; }
-        .service-book-link { font-family: var(--font-heading); font-size: 12px; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 4px; }
-        .service-card:hover .service-book-link i { transform: translateX(2px); color: var(--accent); }
+        .service-card:hover .service-img { transform: scale(1.08); }
+        
+        /* Hover Overlay with Service Name & Learn More Button */
+        .service-hover-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.85); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: var(--transition); z-index: 4; padding: 16px; text-align: center; }
+        .service-card:hover .service-hover-overlay { opacity: 1; }
+        .hover-service-name { color: var(--white); font-family: var(--font-heading); font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .hover-learn-more-btn { background-color: var(--accent); color: var(--secondary); padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: 700; text-decoration: none; display: inline-block; transition: var(--transition); }
+        .hover-learn-more-btn:hover { background-color: var(--white); color: var(--primary); transform: translateY(-2px); }
+        
+        /* Icon overlay */
+        .service-icon-overlay { position: absolute; bottom: 10px; right: 10px; background-color: var(--white); color: var(--primary); width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; box-shadow: var(--shadow-sm); z-index: 3; transition: var(--transition); }
+        .service-card:hover .service-icon-overlay { background-color: var(--primary); color: var(--white); transform: rotate(360deg); }
+        
+        /* Service Info */
+        .service-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+        .service-name { font-size: 17px; margin-bottom: 8px; color: var(--secondary); font-weight: 700; line-height: 1.3; }
+        .service-desc { font-size: 13px; color: #64748B; margin-bottom: 0; line-height: 1.5; flex-grow: 1; }
+        
+        /* Service Actions & Buttons */
+        .service-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto; }
+        .btn-book-service, .btn-know-more { display: inline-flex; align-items: center; justify-content: center; padding: 10px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; font-family: var(--font-heading); text-decoration: none; transition: var(--transition); text-align: center; cursor: pointer; }
+        
+        .btn-book-service { background-color: var(--primary); color: var(--white); border: 1px solid var(--primary); }
+        .btn-book-service:hover { background-color: var(--accent); color: var(--secondary); border-color: var(--accent); transform: translateY(-2px); }
+        
+        .btn-know-more { background-color: transparent; color: var(--primary); border: 1.5px solid var(--primary); }
+        .btn-know-more:hover { background-color: var(--primary); color: var(--white); transform: translateY(-2px); }
         .services-footer { text-align: center; margin-top: 30px; }
 
         /* Why Choose Us */
@@ -260,8 +278,7 @@
             .magazine-grid { grid-template-columns: repeat(2, 1fr); }
             .hero-main { grid-column: span 2; }
             .hero-side-1, .hero-side-2 { grid-column: span 1; }
-            .services-masonry { grid-template-columns: repeat(2, 1fr); }
-            .service-card.tall .service-img-container { height: 130px; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
             .why-grid { grid-template-columns: 1fr; }
             .why-content, .why-img-block { grid-column: span 1; }
             .process-flow { grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -278,7 +295,7 @@
             .magazine-grid { grid-template-columns: 1fr; }
             .hero-main, .hero-side-1, .hero-side-2 { grid-column: span 1; }
             .stats-container { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-            .services-masonry { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; gap: 16px; }
             .process-flow { grid-template-columns: 1fr; }
             .pricing-grid { grid-template-columns: 1fr; }
             .faq-grid { grid-template-columns: 1fr; }
@@ -386,125 +403,320 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Premium Specialties</span>
-                <h2 class="section-title">TOP 8 Most Popular Services</h2>
+                <h2 class="section-title">Professional Pest Control Services</h2>
                 <p class="section-desc">Our highly engineered protective services are tailored to stop infestations at the source and keep pests out of your life for good.</p>
             </div>
-            <div class="services-masonry">
-                <!-- Service 1 (tall) -->
-                <div class="service-card tall">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
                     <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&h=500&q=80" alt="Cockroach Control" class="service-img">
+                        <img src="https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=500&h=350&q=80" alt="Cockroach Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Cockroach Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('cockroach-extermination')">Learn More</a>
+                        </div>
                         <div class="service-icon-overlay"><i class="fa-solid fa-bug"></i></div>
                     </div>
                     <div class="service-info">
                         <div>
-                            <h3 class="service-name">Cockroach Control</h3>
-                            <p class="service-desc">Odorless gel treatment, safe for kitchens. Completely targets colonies without spray or mess.</p>
+                            <h3 class="service-name">Cockroach Extermination</h3>
+                            <p class="service-desc">Odorless gel baiting and residual barrier spray to systematically target colonies. Safe for kitchens, food prep, and residential spaces.</p>
                         </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('cockroach-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('cockroach-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Service 2 -->
                 <div class="service-card">
                     <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&h=300&q=80" alt="Termite Control" class="service-img">
+                        <img src="bed_bug_uploaded.jpg" alt="Bed Bug Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Bed Bug Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('bed-bug-extermination')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-bed"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Bed Bug Extermination</h3>
+                            <p class="service-desc">Rigorous mattress inspections, steam cleaning, and chemical heat treatments targeting all developmental cycles for a peaceful sleep.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('bed-bug-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=500&h=350&q=80" alt="Ant Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Ant Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('ant-extermination')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-bugs"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Ant Extermination</h3>
+                            <p class="service-desc">Targeted baiting and perimeter sealing to halt marching lines and nesting colonies deep within structural wall cavities.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('ant-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=500&h=350&q=80" alt="Rodent Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Rodent Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('rodent-extermination')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Rodent Extermination</h3>
+                            <p class="service-desc">Strategically-placed bait stations, secure live trapping, and comprehensive exclusion services to eliminate mice and rats permanently.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('rodent-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=500&h=350&q=80" alt="Spider Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Spider Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('spider-extermination')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-spider"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Spider Extermination</h3>
+                            <p class="service-desc">Complete cobweb clearing, exterior and attic sweeps, and perimeter liquid barriers to stop dangerous spiders from nesting.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('spider-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&h=350&q=80" alt="Flea and Mite Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Flea & Mite Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('flea-mite-extermination')">Learn More</a>
+                        </div>
                         <div class="service-icon-overlay"><i class="fa-solid fa-shield-virus"></i></div>
                     </div>
                     <div class="service-info">
                         <div>
-                            <h3 class="service-name">Termite Control</h3>
-                            <p class="service-desc">Anti-termite treatment with 1-year warranty. Safeguards structural integrity against damage.</p>
+                            <h3 class="service-name">Flea and Mite Extermination</h3>
+                            <p class="service-desc">Residual micro-encapsulated treatments for carpets, pet zones, and soft furniture to completely break flea and mite life cycles.</p>
                         </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('termite-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('flea-mite-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Service 3 (tall) -->
-                <div class="service-card tall">
+
+                <!-- Service 7 -->
+                <div class="service-card">
                     <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=400&h=500&q=80" alt="Mosquito Control" class="service-img">
+                        <img src="https://images.unsplash.com/photo-1533038590840-1cde6b66b706?auto=format&fit=crop&w=500&h=350&q=80" alt="Hornet and Wasp Extermination" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Hornet & Wasp Extermination</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('wasp-extermination')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-shield"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Hornet and Wasp Extermination</h3>
+                            <p class="service-desc">Surgical removal of hanging nests by certified technicians in protective suits. Includes residual wall spray to prevent rebuilds.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('wasp-extermination')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=500&h=350&q=80" alt="Mosquito Control" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Mosquito Control</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('mosquito-control')">Learn More</a>
+                        </div>
                         <div class="service-icon-overlay"><i class="fa-solid fa-spray-can"></i></div>
                     </div>
                     <div class="service-info">
                         <div>
                             <h3 class="service-name">Mosquito Control</h3>
-                            <p class="service-desc">Fogging + residual spray for lasting protection. Prevents breeding and eliminates active flying insects.</p>
+                            <p class="service-desc">Eco-friendly larvicides and thermal fogging barriers around residential premises to disrupt breeding sites and clear adult swarms.</p>
                         </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('mosquito-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('mosquito-control')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Service 4 -->
+
+                <!-- Service 9 -->
                 <div class="service-card">
                     <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=400&h=300&q=80" alt="Rodent Control" class="service-img">
-                        <div class="service-icon-overlay"><i class="fa-solid fa-shield-halved"></i></div>
-                    </div>
-                    <div class="service-info">
-                        <div>
-                            <h3 class="service-name">Rodent Control</h3>
-                            <p class="service-desc">Trap and seal method for homes and shops. Securely excludes rats and mice from your property.</p>
+                        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=500&h=350&q=80" alt="Termite Control" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Termite Control</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('termite-control')">Learn More</a>
                         </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('rodent-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-img-container">
-                        <img src="bed_bug_uploaded.jpg" alt="Bed Bug Treatment" class="service-img">
-                        <div class="service-icon-overlay"><i class="fa-solid fa-bed"></i></div>
-                    </div>
-                    <div class="service-info">
-                        <div>
-                            <h3 class="service-name">Bed Bug Treatment</h3>
-                            <p class="service-desc">Heat treatment for complete removal. Eradicates bed bugs at all cycles for undisturbed sleep.</p>
-                        </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('bed-bug-treatment')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&h=300&q=80" alt="General Pest Control (AMC)" class="service-img">
-                        <div class="service-icon-overlay"><i class="fa-solid fa-calendar-check"></i></div>
-                    </div>
-                    <div class="service-info">
-                        <div>
-                            <h3 class="service-name">General Pest Control (AMC)</h3>
-                            <p class="service-desc">Quarterly visits for year-round protection. Keep crawling insects fully managed and prevented.</p>
-                        </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('general-pest-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Service 7 -->
-                <div class="service-card">
-                    <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=400&h=300&q=80" alt="Ant Control" class="service-img">
-                        <div class="service-icon-overlay"><i class="fa-solid fa-bugs"></i></div>
-                    </div>
-                    <div class="service-info">
-                        <div>
-                            <h3 class="service-name">Ant Control</h3>
-                            <p class="service-desc">Targeted baiting to eliminate ant colonies. Stops marching lines and nests inside wall cavities.</p>
-                        </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('ant-control')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Service 8 -->
-                <div class="service-card">
-                    <div class="service-img-container">
-                        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=400&h=300&q=80" alt="Wood Borer Treatment" class="service-img">
                         <div class="service-icon-overlay"><i class="fa-solid fa-tree"></i></div>
                     </div>
                     <div class="service-info">
                         <div>
-                            <h3 class="service-name">Wood Borer Treatment</h3>
-                            <p class="service-desc">Injection treatment for furniture and wooden fixtures. Protects premium decor from decay.</p>
+                            <h3 class="service-name">Termite Control</h3>
+                            <p class="service-desc">Extensive diagnostic checkups and direct, certified chemical termiticide barrier protection with full 1-year performance guarantees.</p>
                         </div>
-                        <a href="#contact" class="service-book-link" onclick="setRequestedService('wood-borer-treatment')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('termite-control')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=500&h=350&q=80" alt="Anti-Termite Pre Construction Treatment" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Pre Construction Termite</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('pre-construction-termite')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-trowel-bricks"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Pre Construction Termite Care</h3>
+                            <p class="service-desc">Treating construction soil bed layers before slab pouring to construct an invisible chemical shield right from the foundation level.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('pre-construction-termite')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 11 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&h=350&q=80" alt="Anti-Termite Post Construction Treatment" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Post Construction Termite</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('post-construction-termite')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Post Construction Termite Care</h3>
+                            <p class="service-desc">Precision drilling of tile borders and floor junctions at strategic intervals to inject chemical barriers beneath established properties.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('post-construction-termite')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 12 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=500&h=350&q=80" alt="General Pest Control" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">General Pest Control</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('general-pest-control')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-house-shield"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">General Pest Control</h3>
+                            <p class="service-desc">An all-in-one preventative shield package against ants, lizards, silverfish, and crawl insects. Perfect for regular periodic defense.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('general-pest-control')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 13 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&h=350&q=80" alt="Residential Pest Control" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Residential Pest Control</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('residential-pest-control')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-house-chimney"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Residential Pest Control</h3>
+                            <p class="service-desc">Tailored pest barriers designed exclusively for family homes, with emphasis on pet-safety, low odor, and deep internal nesting targets.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('residential-pest-control')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 14 -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&h=350&q=80" alt="Commercial Pest Control" class="service-img" loading="lazy">
+                        <div class="service-hover-overlay">
+                            <span class="hover-service-name">Commercial Pest Control</span>
+                            <a href="#contact" class="hover-learn-more-btn" onclick="setRequestedService('commercial-pest-control')">Learn More</a>
+                        </div>
+                        <div class="service-icon-overlay"><i class="fa-solid fa-building"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Commercial Pest Control</h3>
+                            <p class="service-desc">Regulated high-standard sanitation plans for offices, hotels, hospitals, and storage warehouses complying with local health codes.</p>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#contact" class="btn-book-service" onclick="setRequestedService('commercial-pest-control')">Book Service</a>
+                            <a href="#faq" class="btn-know-more">Know More</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="services-footer">
-                <a href="#contact" class="cta-btn">View All Premium Services</a>
+                <a href="#contact" class="cta-btn">Book Premium Custom Program</a>
             </div>
         </div>
     </section>
@@ -870,22 +1082,26 @@
                             <label for="serviceNeeded">Service Needed *</label>
                             <select id="serviceNeeded" class="form-control" required>
                                 <option value="" disabled selected>Select service category...</option>
-                                <optgroup label="Common Pest Control">
-                                    <option value="cockroach-control">Cockroach Control</option>
-                                    <option value="ant-control">Ant Control</option>
-                                    <option value="housefly-control">Housefly Control</option>
+                                <optgroup label="Common Pest Extermination">
+                                    <option value="cockroach-extermination">Cockroach Extermination</option>
+                                    <option value="ant-extermination">Ant Extermination</option>
+                                    <option value="spider-extermination">Spider Extermination</option>
+                                    <option value="flea-mite-extermination">Flea and Mite Extermination</option>
+                                    <option value="wasp-extermination">Hornet & Wasp Extermination</option>
                                 </optgroup>
-                                <optgroup label="Wood & Termite Care">
+                                <optgroup label="Termite Care & Construction">
                                     <option value="termite-control">Termite Control</option>
-                                    <option value="wood-borer-treatment">Wood Borer Treatment</option>
+                                    <option value="pre-construction-termite">Anti-Termite Pre Construction Treatment</option>
+                                    <option value="post-construction-termite">Anti-Termite Post Construction Treatment</option>
                                 </optgroup>
-                                <optgroup label="Rodent & Wildlife Control">
-                                    <option value="rodent-control">Rodent Control</option>
-                                </optgroup>
-                                <optgroup label="Specialized Treatments">
-                                    <option value="bed-bug-treatment">Bed Bug Treatment</option>
+                                <optgroup label="Specialized Management">
+                                    <option value="bed-bug-extermination">Bed Bug Extermination</option>
+                                    <option value="rodent-extermination">Rodent Extermination</option>
                                     <option value="mosquito-control">Mosquito Control</option>
-                                    <option value="general-pest-control">General Pest Control (AMC)</option>
+                                </optgroup>
+                                <optgroup label="Comprehensive Protection">
+                                    <option value="general-pest-control">General Pest Control</option>
+                                    <option value="residential-pest-control">Residential Pest Control</option>
                                     <option value="commercial-pest-control">Commercial Pest Control</option>
                                 </optgroup>
                             </select>
