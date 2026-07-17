@@ -1,0 +1,6 @@
+{
+  "name": "Peptop Pest Control",
+  "description": "Professional and trustworthy Pest Control Services website with a premium responsive layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

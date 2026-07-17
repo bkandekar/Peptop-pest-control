@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peptop Pest Control Services | Professional Pest Control</title>
+    <meta name="description" content="Professional, trustworthy and effective pest control services for residential and commercial spaces. Book a free inspection today!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- LocalBusiness Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Peptop Pest Control Services",
+      "image": "https://placehold.co/800x600/3A5A78/FFFFFF?text=Peptop+Logo",
+      "telephone": "+1234567890",
+      "email": "info@peptoppest.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Pest Control Way",
+        "addressLocality": "Metro City",
+        "addressRegion": "MC",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "url": "https://peptoppest.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ]
+    }
+    </script>
+
+    <!-- GOOGLE ANALYTICS SNIPPET -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- END GOOGLE ANALYTICS SNIPPET -->
+
+    <style>
+        /* CSS Design System and Custom Visual Styling */
+        :root {
+            --primary: #3A5A78;
+            --accent: #4CC9F0;
+            --bg: #F4F6F8;
+            --text: #1E293B;
+            --secondary: #2C3E50;
+            --white: #FFFFFF;
+            --gray-light: #E2E8F0;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 8px 30px rgba(58, 90, 120, 0.08);
+            --shadow-lg: 0 15px 40px rgba(58, 90, 120, 0.15);
+            --font-heading: 'Sora', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Base Resets */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: var(--font-body);
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        body {
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* Header & Navigation Styling */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+            padding: 8px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--accent);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-link {
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-btn {
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phone-btn:hover {
+            color: var(--accent);
+        }
+
+        .cta-btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(76, 201, 240, 0.4);
+            background-color: var(--secondary);
+        }
+
+        .accent-btn {
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+
+        .accent-btn:hover {
+            background-color: #38bdf8;
+            color: var(--white);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section (Magazine Grid Style) */
+        .hero {
+            padding-top: 140px;
+            background-color: var(--bg);
+        }
+
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        .hero-main {
+            grid-column: span 8;
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .hero-main-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.45);
+        }
+
+        .hero-main-content {
+            position: relative;
+            z-index: 2;
+            padding: 60px;
+            color: var(--white);
+        }
+
+        .editorial-label {
+            background-color: var(--accent);
+            color: var(--secondary);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            font-family: var(--font-heading);
+        }
+
+        .hero-title {
+            font-size: 48px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-weight: 800;
+        }
+
+        .hero-desc {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 550px;
+            font-weight: 300;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        /* Hero Side Card 1 */
+        .hero-side-1 {
+            grid-column: span 4;
+            background-color: var(--primary);
+            border-radius: 20px;
+            padding: 40px;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-side-1::after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: rgba(76, 201, 240, 0.15);
+            border-radius: 50%;
+        }
+
+        .hero-side-title {
+            font-size: 24px;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .hero-side-desc {
+            font-size: 15px;
+            opacity: 0.85;
+            margin-bottom: 24px;
+        }
+
+        /* Hero Side Card 2 */
+        .hero-side-2 {
+            grid-column: span 4;
+            background-color: var(--white);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .emergency-pill {
+            background-color: #FEE2E2;
+            color: #EF4444;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            width: fit-content;
+            text-transform: uppercase;
+        }
+
+        /* Stats Bar Styling */
+        .stats-bar {
+            background-color: var(--white);
+            padding: 40px 0;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+
+        .stat-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .stat-icon {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #64748B;
+            font-weight: 500;
+        }
+
+        /* Section Typography & Titles */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+        }
+
+        .section-tag {
+            color: var(--primary);
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: block;
+            font-family: var(--font-heading);
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: var(--secondary);
+        }
+
+        .section-desc {
+            color: #64748B;
+            font-size: 16px;
+        }
+
+        /* Services Masonry Grid */
+        .services {
+            background-color: var(--white);
+        }
+
+        .services-masonry {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background-color: var(--bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+
+        /* Sizing variants to mimic masonry in standard responsive grids */
+        .service-card.tall {
+            grid-row: span 2;
+        }
+
+        .service-img-container {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-card.tall .service-img-container {
+            height: 280px;
+        }
+
+        .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+
+        .service-icon-overlay {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background-color: var(--white);
+            color: var(--primary);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .service-info {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-name {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--secondary);
+        }
+
+        .service-desc {
+            font-size: 14px;
+            color: #64748B;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .service-book-link {
+            font-family: var(--font-heading);
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            width: fit-content;
+        }
+
+        .service-book-link i {
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-book-link i {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        .services-footer {
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        /* Why Choose Us Styling */
+        .why-choose-us {
+            background-color: var(--bg);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .why-content {
+            grid-column: span 7;
+        }
+
+        .why-img-block {
+            grid-column: span 5;
+            position: relative;
+        }
+
+        .why-img-card {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .why-badge-overlay {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            max-width: 200px;
+        }
+
+        .why-badge-number {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .why-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .feature-item {
+            background-color: var(--white);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon-wrapper {
+            background-color: rgba(76, 201, 240, 0.15);
+            color: var(--primary);
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* Process / How It Works */
+        .process {
+            background-color: var(--white);
+        }
+
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .process-flow::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background-image: linear-gradient(to right, var(--primary) 50%, rgba(255,255,255,0) 0%);
+            background-position: top;
+            background-size: 15px 1px;
+            background-repeat: repeat-x;
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            background-color: var(--primary);
+            color: var(--white);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 auto 24px auto;
+            border: 6px solid var(--white);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .process-step:hover .step-number {
+            background-color: var(--accent);
+            color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .step-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* Gallery/Before-After Grid */
+        .gallery {
+            background-color: var(--bg);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .gallery-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .gallery-card:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-slider-wrapper {
+            position: relative;
+            height: 240px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .gallery-img-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-img-after {
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            transition: var(--transition);
+        }
+
+        .gallery-card:hover .gallery-img-after {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .gallery-label-tag {
+            position: absolute;
+            top: 16px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 5;
+        }
+
+        .tag-before {
+            left: 16px;
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .tag-after {
+            right: 16px;
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+
+        .gallery-info {
+            padding: 20px;
+        }
+
+        .gallery-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .gallery-tagline {
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Testimonials Slider Styling */
+        .testimonials {
+            background-color: var(--white);
+            overflow: hidden;
+        }
+
+        .carousel-outer {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .testimonial-card {
+            background-color: var(--bg);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial-card i.quote-icon {
+            font-size: 48px;
+            color: rgba(76, 201, 240, 0.3);
+            margin-bottom: 24px;
+        }
+
+        .stars {
+            color: #FBBF24;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .review-text {
+            font-size: 18px;
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .author-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+        }
+
+        .author-name {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--secondary);
+        }
+
+        .author-status {
+            font-size: 12px;
+            color: #64748B;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .author-status i {
+            color: #10B981;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--primary);
+            color: var(--white);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+
+        .carousel-btn.prev {
+            left: -60px;
+        }
+
+        .carousel-btn.next {
+            right: -60px;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--gray-light);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background-color: var(--primary);
+            width: 24px;
+            border-radius: 10px;
+        }
+
+        /* Pricing Packages Styling */
+        .pricing {
+            background-color: var(--bg);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background-color: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--accent);
+            background-color: var(--white);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .package-name {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: var(--secondary);
+        }
+
+        .package-price {
+            margin-bottom: 24px;
+        }
+
+        .price-amount {
+            font-family: var(--font-heading);
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .price-period {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+            flex-grow: 1;
+        }
+
+        .pricing-features li {
+            font-size: 14px;
+            color: #475569;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--bg);
+        }
+
+        .pricing-features li i {
+            color: #10B981;
+        }
+
+        .pricing-features li.disabled {
+            color: #94A3B8;
+            text-decoration: line-through;
+        }
+
+        .pricing-features li.disabled i {
+            color: #CBD5E1;
+        }
+
+        /* FAQ Accordion Styling */
+        .faq {
+            background-color: var(--white);
+        }
+
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--gray-light);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: var(--bg);
+            transition: var(--transition);
+        }
+
+        .faq-header {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .faq-question {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            font-family: var(--font-heading);
+        }
+
+        .faq-icon {
+            font-size: 16px;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .faq-content {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+        }
+
+        .faq-item.active {
+            border-color: var(--primary);
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 1000px;
+            padding: 0 24px 24px 24px;
+            transition: max-height 0.3s cubic-bezier(1, 0, 1, 0), padding 0.3s ease;
+        }
+
+        /* Contact & Lead Form styling */
+        .contact {
+            background-color: var(--bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 40px;
+        }
+
+        .contact-form-block {
+            grid-column: span 7;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 8px;
+            font-family: var(--font-heading);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-light);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 15px;
+            transition: var(--transition);
+            background-color: var(--bg);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(58, 90, 120, 0.15);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='%233A5A78' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        .contact-info-block {
+            grid-column: span 5;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .info-card {
+            background-color: var(--white);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 16px;
+        }
+
+        .info-icon {
+            background-color: rgba(76, 201, 240, 0.15);
+            color: var(--primary);
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .info-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        .map-placeholder {
+            background-color: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            height: 250px;
+            position: relative;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Floating WhatsApp Button with pulse */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            animation: pulse-whatsapp 2s infinite;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-3px);
+            background-color: #128C7E;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: var(--secondary);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 80px 0 24px 0;
+            font-size: 14px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo i {
+            color: var(--accent);
+        }
+
+        .footer-desc {
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-btn {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent);
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-title {
+            font-family: var(--font-heading);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-link-item a:hover {
+            color: var(--accent);
+            padding-left: 6px;
+        }
+
+        .service-areas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .credit-line {
+            font-size: 13px;
+        }
+
+        /* Mobile / Tablet Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .magazine-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-main {
+                grid-column: span 2;
+            }
+            .hero-side-1 {
+                grid-column: span 1;
+            }
+            .hero-side-2 {
+                grid-column: span 1;
+            }
+            .services-masonry {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-card.tall {
+                grid-row: auto;
+            }
+            .service-card.tall .service-img-container {
+                height: 200px;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-content, .why-img-block {
+                grid-column: span 1;
+            }
+            .why-img-block {
+                margin-top: 40px;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-form-block, .contact-info-block {
+                grid-column: span 1;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 40px 24px;
+                gap: 24px;
+                box-shadow: var(--shadow-md);
+                transition: var(--transition);
+                align-items: flex-start;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .header-actions {
+                display: none;
+            }
+            .magazine-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-main, .hero-side-1, .hero-side-2 {
+                grid-column: span 1;
+            }
+            .hero-main {
+                min-height: 400px;
+            }
+            .hero-main-content {
+                padding: 30px;
+            }
+            .hero-title {
+                font-size: 32px;
+            }
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            .services-masonry {
+                grid-template-columns: 1fr;
+            }
+            .why-features {
+                grid-template-columns: 1fr;
+            }
+            .process-flow {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .process-flow::before {
+                display: none;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .carousel-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-shield-virus"></i> Peptop
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#why-choose-us" class="nav-link">About Us</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="tel:+1234567890" class="phone-btn">
+                    <i class="fa-solid fa-phone-volume"></i> 1-800-555-7378
+                </a>
+                <a href="#contact" class="cta-btn accent-btn">Book Free Inspection</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section (Magazine Grid Layout) -->
+    <section class="hero">
+        <div class="container">
+            <div class="magazine-grid">
+                
+                <!-- Main Magazine Card (Spans left/center) -->
+                <div class="hero-main">
+                    <img src="https://placehold.co/1200x800/3A5A78/FFFFFF?text=Premium+Pest+Shield" alt="Pest Control Service Hero" class="hero-main-bg">
+                    <div class="hero-main-content">
+                        <span class="editorial-label">Elite Pest Protection</span>
+                        <h1 class="hero-title">We Protect Your Sanctuary From Unwanted Invaders.</h1>
+                        <p class="hero-desc">Experience premium, eco-friendly pest control solutions designed to safeguard your home and business. Fast, certified, and guaranteed results.</p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="cta-btn accent-btn">Get Free Inspection Today</a>
+                            <a href="https://wa.me/18005557378?text=Hi,%20I%20need%20pest%20control%20service" target="_blank" class="cta-btn" id="hero-whatsapp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Card 1 (Primary Block) -->
+                <div class="hero-side-1">
+                    <div>
+                        <span class="editorial-label" style="background-color: var(--accent); color: var(--secondary);">Safe & Green</span>
+                        <h3 class="hero-side-title" style="margin-top: 16px;">Eco-Friendly Shield System</h3>
+                        <p class="hero-side-desc">Advanced treatment protocols that are 100% pet-friendly and child-safe. No toxins, no hassle.</p>
+                    </div>
+                    <a href="#why-choose-us" class="service-book-link" style="color: var(--accent);">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Side Card 2 (Accented Info Block) -->
+                <div class="hero-side-2">
+                    <div class="emergency-pill">
+                        <i class="fa-solid fa-circle-exclamation"></i> 24x7 Emergency Help
+                    </div>
+                    <div>
+                        <h3 class="hero-side-title" style="color: var(--secondary); margin: 20px 0 10px 0;">Need Immediate Dispatch?</h3>
+                        <p class="hero-side-desc" style="color: #64748B;">Our premium rapid response squad is ready to deploy immediately to neutralize your emergency infestations.</p>
+                    </div>
+                    <a href="tel:+1234567890" class="cta-btn" style="text-align: center; width: 100%;">Call Local Squad Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Stats / Trust Bar -->
+    <div class="stats-bar">
+        <div class="container stats-container">
+            <div class="stat-badge">
+                <i class="fa-solid fa-calendar-check stat-icon"></i>
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years of Shielding</div>
+            </div>
+            <div class="stat-badge">
+                <i class="fa-solid fa-house-chimney-crack stat-icon"></i>
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Homes Sanitized</div>
+            </div>
+            <div class="stat-badge">
+                <i class="fa-solid fa-id-card stat-icon"></i>
+                <div class="stat-number">Licensed</div>
+                <div class="stat-label">& Certified Experts</div>
+            </div>
+            <div class="stat-badge">
+                <i class="fa-solid fa-clock-rotate-left stat-icon"></i>
+                <div class="stat-number">24x7</div>
+                <div class="stat-label">Emergency Coverage</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Services Section (Masonry-Grid Gallery-Style) -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Premium Specialties</span>
+                <h2 class="section-title">TOP 8 Most Popular Services</h2>
+                <p class="section-desc">Our highly engineered protective services are tailored to stop infestations at the source and keep pests out of your life for good.</p>
+            </div>
+
+            <div class="services-masonry">
+                
+                <!-- 1. Residential Pest Control -->
+                <div class="service-card tall">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x500/3A5A78/FFFFFF?text=Residential+Control" alt="Residential Pest Control" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-house"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Residential Shield</h3>
+                            <p class="service-desc">Complete diagnostic analysis and long-term elimination of common home invaders like ants, roaches, and spiders.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('residential-pest')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. Commercial Pest Control -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Commercial+Control" alt="Commercial Pest Control" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-building"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Commercial IPM</h3>
+                            <p class="service-desc">Bespoke corporate Integrated Pest Management for restaurants, warehouses, and corporate facilities.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('commercial-ipm')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3. Termite Inspection & Treatment -->
+                <div class="service-card tall">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x500/3A5A78/FFFFFF?text=Termite+Eradication" alt="Termite Treatment" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-bugs"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Termite Barriers</h3>
+                            <p class="service-desc">Advanced sub-slab injections and bait systems designed to neutralize active colonies and create absolute defense barriers.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('termite-barriers')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 4. Bed Bug Eradication -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Bed+Bug+Heat" alt="Bed Bug Treatment" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-bed"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Bed Bug Heat Protocol</h3>
+                            <p class="service-desc">Thermal convection systems that eradicate bed bugs in all development stages in just one swift treatment session.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('bed-bug-thermal')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 5. Rodent Control -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Rodent+Exclusion" alt="Rodent Control" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-shield"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Rodent Guard</h3>
+                            <p class="service-desc">Strategic building sealing and capture plans to immediately lock out mice and rats from building cavities.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('rodent-exclusion')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 6. Mosquito & Tick Control -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Mosquito+Barrier" alt="Mosquito Control" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Mosquito Shield</h3>
+                            <p class="service-desc">Protective perimeter barrier sprays that slash mosquito counts and protect your families from virus-bearing vectors.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('mosquito-barrier')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 7. Wildlife Control & Removal -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Wildlife+Removal" alt="Wildlife Control" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-paw"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Humane Wildlife Extraction</h3>
+                            <p class="service-desc">Safe capture and ethical relocation of destructive raccoons, bats, squirrels, and birds from attics and chimneys.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('wildlife-humane')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 8. Disinfection & Sanitization -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="https://placehold.co/400x300/3A5A78/FFFFFF?text=Sanitization" alt="Disinfection & Sanitization" class="service-img">
+                        <div class="service-icon-overlay"><i class="fa-solid fa-pump-soap"></i></div>
+                    </div>
+                    <div class="service-info">
+                        <div>
+                            <h3 class="service-name">Deep Sanitization Shield</h3>
+                            <p class="service-desc">Medical-grade anti-microbial deep fogging to sanitize areas affected by rodent infestations and nested pathogens.</p>
+                        </div>
+                        <a href="#contact" class="service-book-link" onclick="setRequestedService('sanitization-deep')">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="services-footer">
+                <a href="#contact" class="cta-btn">View All Premium Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Why Choose Us Section -->
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <div class="why-grid">
+                
+                <div class="why-content">
+                    <span class="section-tag">Unmatched Superiority</span>
+                    <h2 class="section-title">The Absolute Standard in Premium Pest Eradication</h2>
+                    <p class="section-desc">At Peptop, we do not just apply products—we build impenetrable barriers. We utilize the industry's most advanced molecular diagnostic gear and safe, sustainable shield formulas.</p>
+                    
+                    <div class="why-features">
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper"><i class="fa-solid fa-leaf"></i></div>
+                            <h4 class="feature-title">Eco-Safe Shielding</h4>
+                            <p class="feature-desc">100% kid-friendly, botanically derived ingredients that strike target nests without leaving chemical footprints.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper"><i class="fa-solid fa-user-ninja"></i></div>
+                            <h4 class="feature-title">Certified Commandos</h4>
+                            <p class="feature-desc">Our pest squad consists of background-checked, credentialed specialists who undergo continuous academic training.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper"><i class="fa-solid fa-clock"></i></div>
+                            <h4 class="feature-title">24-Hour Active Dispatch</h4>
+                            <p class="feature-desc">Crisis support at midnight. Our emergency technicians deploy in specialized service vehicles instantly.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper"><i class="fa-solid fa-money-bill-wave"></i></div>
+                            <h4 class="feature-title">Zero Hidden Surcharges</h4>
+                            <p class="feature-desc">What we quote is exactly what you pay. Fixed project contracts, upfront rates, and clear invoice audits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-img-block">
+                    <div class="why-img-card">
+                        <img src="https://placehold.co/600x800/3A5A78/FFFFFF?text=Certified+Specialist" alt="Professional Technician" style="width: 100%; border-radius: 24px;">
+                    </div>
+                    <div class="why-badge-overlay">
+                        <div class="why-badge-number">100%</div>
+                        <div style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Satisfaction Guaranteed</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Process / How It Works Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tactical Execution</span>
+                <h2 class="section-title">Our 4-Step Strategic Protocol</h2>
+                <p class="section-desc">We follow a strict clinical framework to ensure full pest eradication and persistent structural defense.</p>
+            </div>
+
+            <div class="process-flow">
+                
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Molecular Audit</h3>
+                    <p class="step-desc">A certified forensic examiner maps structural vulnerabilities and scans nesting sites with sensor arrays.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Custom Strategy</h3>
+                    <p class="step-desc">We construct a detailed defensive plan specifying target agents, barriers, and long-term blockages.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Targeted Strike</h3>
+                    <p class="step-desc">We apply specialized botanical micro-agents directly inside nests and install physical exclusions.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Continuous Guard</h3>
+                    <p class="step-desc">Follow-up quality checks and physical sensors ensure total nest collapse and keep defensive borders active.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Gallery/Before-After Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Surgical Audits</span>
+                <h2 class="section-title">Before / After Evidence Records</h2>
+                <p class="section-desc">Hover over any card to view the transformative outcome of our premium sanitization and exclusion procedures.</p>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <!-- Gallery 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-slider-wrapper">
+                        <span class="gallery-label-tag tag-before">Before</span>
+                        <span class="gallery-label-tag tag-after">After</span>
+                        <!-- Before Image -->
+                        <img src="https://placehold.co/600x400/94A3B8/1E293B?text=Infested+Drywall" alt="Termite Damaged Wall" class="gallery-img-side">
+                        <!-- After Image -->
+                        <img src="https://placehold.co/600x400/4CC9F0/1E293B?text=Sterile+Defense+Injected" alt="Sanitized and sealed wall" class="gallery-img-side gallery-img-after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Wall Cavity Termite Injection</h4>
+                        <p class="gallery-tagline">Chemical barrier installed, wall fully sanitized</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-slider-wrapper">
+                        <span class="gallery-label-tag tag-before">Before</span>
+                        <span class="gallery-label-tag tag-after">After</span>
+                        <!-- Before Image -->
+                        <img src="https://placehold.co/600x400/94A3B8/1E293B?text=Compromised+Attic" alt="Rodent Nesting Ground" class="gallery-img-side">
+                        <!-- After Image -->
+                        <img src="https://placehold.co/600x400/4CC9F0/1E293B?text=Attic+Insulated+and+Sealed" alt="Fully Exclusion Blocked Attic" class="gallery-img-side gallery-img-after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Rodent Attic Exclusion</h4>
+                        <p class="gallery-tagline">Exclusions installed, bio-hazard fogged</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-slider-wrapper">
+                        <span class="gallery-label-tag tag-before">Before</span>
+                        <span class="gallery-label-tag tag-after">After</span>
+                        <!-- Before Image -->
+                        <img src="https://placehold.co/600x400/94A3B8/1E293B?text=Weed+and+Tick+Nest" alt="Tick breeding yard area" class="gallery-img-side">
+                        <!-- After Image -->
+                        <img src="https://placehold.co/600x400/4CC9F0/1E293B?text=Protected+Green+Perimeter" alt="Sterile ticks free yard" class="gallery-img-side gallery-img-after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Yard Tick Elimination</h4>
+                        <p class="gallery-tagline">Yard misted, defensive micro-beads applied</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials Section (Carousel) -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Elite Approvals</span>
+                <h2 class="section-title">What Our Shielded Clients Say</h2>
+                <p class="section-desc">Read reviews from verified residential homeowners and corporate executives who experienced complete pest elimination.</p>
+            </div>
+
+            <div class="carousel-outer">
+                <button class="carousel-btn prev" id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                
+                <div style="overflow: hidden; width: 100%;">
+                    <div class="carousel-track" id="carousel-track">
+                        
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <i class="fa-solid fa-quote-right quote-icon"></i>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">"Our property was completely overrun by termites. Peptop arrived within two hours of my call. Their molecular termiticide system completely neutralized the colonies. The forensic report was highly educational and professional. Absolute game changers!"</p>
+                                <div class="author-info">
+                                    <img src="https://placehold.co/100x100/3A5A78/FFFFFF?text=Customer" alt="John D." class="author-avatar">
+                                    <div style="text-align: left;">
+                                        <div class="author-name">Jonathan Vance</div>
+                                        <div class="author-status"><i class="fa-solid fa-circle-check"></i> Verified Homeowner</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <i class="fa-solid fa-quote-right quote-icon"></i>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">"As a restaurant general manager, pest compliance audit score is life or death. Peptop implemented a customized Commercial IPM system that completely eliminated fruit flies and roaches. Our inspection records are absolutely perfect now."</p>
+                                <div class="author-info">
+                                    <img src="https://placehold.co/100x100/3A5A78/FFFFFF?text=Manager" alt="Sarah K." class="author-avatar">
+                                    <div style="text-align: left;">
+                                        <div class="author-name">Sarah Jenkins</div>
+                                        <div class="author-status"><i class="fa-solid fa-circle-check"></i> Restaurant General Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <i class="fa-solid fa-quote-right quote-icon"></i>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">"We tried three discount pest control services to stop a massive squirrel infiltration in our attic, but they kept returning. Peptop's elite squad tracked the entry points, safely relocated them, and installed steel structural barriers. Phenomenal service!"</p>
+                                <div class="author-info">
+                                    <img src="https://placehold.co/100x100/3A5A78/FFFFFF?text=Verified" alt="Marcus T." class="author-avatar">
+                                    <div style="text-align: left;">
+                                        <div class="author-name">Marcus Thome</div>
+                                        <div class="author-status"><i class="fa-solid fa-circle-check"></i> Verified Homeowner</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Pricing / Packages Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Defensive Programs</span>
+                <h2 class="section-title">Transparent Defense Investment</h2>
+                <p class="section-desc">Choose a customized protective shielding package that fits your structure's size and level of exposure.</p>
+            </div>
+
+            <div class="pricing-grid">
+                
+                <!-- 1. Basic Shield -->
+                <div class="pricing-card">
+                    <h3 class="package-name">Basic Shield</h3>
+                    <div class="package-price">
+                        <span class="price-amount">$39</span>
+                        <span class="price-period">/ month (Billed quarterly)</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 3 Seasonal Perimeter Sprays</li>
+                        <li><i class="fa-solid fa-check"></i> General Crawling Insect Elimination</li>
+                        <li><i class="fa-solid fa-check"></i> Eco-Friendly Botanical Formulas</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Exterior Entry Point Sealing</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Subterranean Termite Barrier Protection</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> 24x7 Active Emergency Dispatch</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn" style="text-align: center;" onclick="setRequestedService('residential-pest')">Order Basic Shield</a>
+                </div>
+
+                <!-- 2. Premium Guard (Featured) -->
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Most Popular</span>
+                    <h3 class="package-name" style="color: var(--primary);">Premium Guard</h3>
+                    <div class="package-price">
+                        <span class="price-amount">$59</span>
+                        <span class="price-period">/ month (Billed quarterly)</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 4 Seasonal Complete Inspections</li>
+                        <li><i class="fa-solid fa-check"></i> General Crawler & Wasp Control</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Rodent Shield Seal</li>
+                        <li><i class="fa-solid fa-check"></i> Mosquito Yard Sprays (May-Sep)</li>
+                        <li><i class="fa-solid fa-check"></i> 100% Satisfaction Shield Warranty</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Complete Termite Liquid System</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn accent-btn" style="text-align: center;" onclick="setRequestedService('residential-pest')">Secure Premium Guard</a>
+                </div>
+
+                <!-- 3. Ultimate Protection -->
+                <div class="pricing-card">
+                    <h3 class="package-name">Ultimate Defense</h3>
+                    <div class="package-price">
+                        <span class="price-amount">$89</span>
+                        <span class="price-period">/ month (Billed quarterly)</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Monthly Premium Diagnostics</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Crawling & Flying Insect Elimination</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Rodent & Squirrel Exclusion</li>
+                        <li><i class="fa-solid fa-check"></i> Active Termite Baiting System</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Sanitization Treatment</li>
+                        <li><i class="fa-solid fa-check"></i> 24x7 Express VIP Squad Dispatch</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn" style="text-align: center;" onclick="setRequestedService('termite-barriers')">Deploy Ultimate Guard</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FAQ Section (Accordion) -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Information Bureau</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Clear, direct answers regarding our elite formulas, procedures, warranties, and emergency protocols.</p>
+            </div>
+
+            <div class="faq-accordion">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-question">Are the protective agents safe for domestic pets and kids?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p style="color: #64748B; font-size: 15px;">Absolutely. All Peptop solutions are green, plant-derived, or fully organic bio-reagents. They are specifically engineered to eliminate target insect metabolisms without causing harm to mammals, children, or domestic animals.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-question">How fast can an emergency specialist arrive at my property?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p style="color: #64748B; font-size: 15px;">Our active rapid-response dispatch centers run 24 hours a day, 7 days a week. For emergency residential infestations or commercial compliance emergencies, a team will be deployed in specialized vehicles to your site within 60 to 90 minutes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-question">Is there a written warranty on your pest control treatments?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p style="color: #64748B; font-size: 15px;">Yes, all recurring shield contracts and custom bed bug/rodent jobs include our iron-clad Peptop Satisfaction Shield. If targeted pests reappear at any point between your regular treatment cycles, we will deploy our rapid response squad to re-treat your home at absolutely zero additional charge.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-question">What preparations should I make before the inspection squad arrives?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p style="color: #64748B; font-size: 15px;">For standard audits, simply clear furniture away from wall perimeters and ensure pets are securely placed in bedrooms. For specialized operations like bed bug thermal convection or deep fogging, your customer coordinator will email you a simple checklist containing detailed step-by-step room prep steps.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-question">What states and counties are actively covered by your squads?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p style="color: #64748B; font-size: 15px;">We operate service depots throughout Metro City, Suburbia, Northwood County, Southbay Bay, and Coastal Haven. If you are uncertain about service availability, please insert your ZIP code into our contact form to view direct dispatch depot assignments.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Contact & Lead Form Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Instant Connection</span>
+                <h2 class="section-title">Schedule Your Premium Inspection</h2>
+                <p class="section-desc">Submit your inspection dossier below. Our triage squad will immediately verify available dispatch slots and contact you via phone or WhatsApp.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Lead capture form -->
+                <div class="contact-form-block">
+                    <form id="leadForm" novalidate>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your first and last name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number *</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="Enter your mobile number (e.g., 123-456-7890)" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="addressArea">Address / Area *</label>
+                            <input type="text" id="addressArea" class="form-control" placeholder="Enter street address, unit, and city area" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceNeeded">Service Needed *</label>
+                            <select id="serviceNeeded" class="form-control" required>
+                                <option value="" disabled selected>Select service category...</option>
+                                
+                                <optgroup label="General Pest Defense">
+                                    <option value="residential-pest">Ants, Roaches & Spiders Eradication</option>
+                                    <option value="silverfish-centipede">Silverfish & Centipede Treatment</option>
+                                    <option value="flea-tick-yard">Flea & Tick Yard Defense</option>
+                                </optgroup>
+                                
+                                <optgroup label="Specialty Eradication">
+                                    <option value="termite-barriers">Termite Colony Injections & Baiting</option>
+                                    <option value="bed-bug-thermal">Bed Bug Convection Heat Treatment</option>
+                                    <option value="rodent-exclusion">Rodent Containment & Sealing</option>
+                                </optgroup>
+                                
+                                <optgroup label="Outdoor Barriers">
+                                    <option value="mosquito-barrier">Mosquito Perimeter Guard Sprays</option>
+                                    <option value="wasp-hornet-nest">Wasp & Hornet Nest Extraction</option>
+                                    <option value="seasonal-shield">All-Year Seasonal Ground Shield</option>
+                                </optgroup>
+                                
+                                <optgroup label="Wildlife & Facilities">
+                                    <option value="wildlife-humane">Humane Wildlife Relocation (Raccoons/Bats)</option>
+                                    <option value="commercial-ipm">Commercial Facility IPM Services</option>
+                                    <option value="sanitization-deep">Disinfection & Deep Sanitization Fogging</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userMessage">Optional Special Instructions</label>
+                            <textarea id="userMessage" class="form-control" rows="4" placeholder="Briefly describe the pests you are spotting, pet locations, or any specific gates/instructions..."></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn accent-btn" style="width: 100%; padding: 16px; border-radius: 12px; font-size: 16px;">
+                            <i class="fa-solid fa-paper-plane"></i> I Want This Service
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact details & Map Placeholder -->
+                <div class="contact-info-block">
+                    
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <h4 class="info-title">Rapid Booking Support</h4>
+                            <p class="info-text">1-800-555-7378 (PEST)</p>
+                            <p class="info-text" style="font-size: 12px; margin-top: 4px;">Mon - Sun: 24/7 Dispatch Available</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div>
+                            <h4 class="info-title">Corporate Dossier Email</h4>
+                            <p class="info-text">triage@peptoppest.com</p>
+                            <p class="info-text" style="font-size: 12px; margin-top: 4px;">General audits and billing queries</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <h4 class="info-title">Central Operations Depot</h4>
+                            <p class="info-text">100 Pest Control Way, Suite 400</p>
+                            <p class="info-text">Metro City, MC 12345</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <iframe class="map-iframe" src="https://maps.google.com/maps?q=100%20Pest%20Control%20Way,%20Metro%20City,%20MC%2012345&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div>
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-shield-virus"></i> Peptop
+                    </div>
+                    <p class="footer-desc">Providing premium, high-engineering structural pest control and safe protective barriers. Safeguarding residential homes and commercial operations 24 hours a day, 365 days a year.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Home Dashboard</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Tactical Services</a></li>
+                        <li class="footer-link-item"><a href="#why-choose-us"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Quality Standards</a></li>
+                        <li class="footer-link-item"><a href="#gallery"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Evidence Records</a></li>
+                        <li class="footer-link-item"><a href="#faq"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Information FAQ</a></li>
+                        <li class="footer-link-item"><a href="#contact"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Booking Dossier</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Primary Deployments</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Residential Pest Shield</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Commercial IPM Program</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Termite Soil Barrier</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Bed Bug Thermal Convection</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Rodent Structure Exclusion</a></li>
+                        <li class="footer-link-item"><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Disinfection Deep Fogging</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Active Service Areas</h4>
+                    <div class="service-areas">
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> Metro City</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> Suburbia</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> Northwood</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> Southbay</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> Coastal Haven</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> High Hills</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> West End</div>
+                        <div style="font-size: 13px;"><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 6px;"></i> East River</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Peptop Pest Control Services. All rights reserved.</div>
+                <div class="credit-line">Website by ebookcharm Web Services</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed/Floating pulse WhatsApp Button -->
+    <a href="https://wa.me/18005557378?text=Hi,%20I%20need%20pest%20control%20service" class="whatsapp-float" target="_blank" id="floating-whatsapp-btn" aria-label="Chat with our emergency dispatch team on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Module -->
+    <script>
+        // 1. Sticky Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 2. Mobile Nav Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile nav when clicking a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+                menuToggle.querySelector('i').classList.remove('fa-xmark');
+            });
+        });
+
+        // 3. Service dropdown helper function (when clicking a quick book link on cards, pre-selects correct group option)
+        function setRequestedService(serviceValue) {
+            const dropdown = document.getElementById('serviceNeeded');
+            dropdown.value = serviceValue;
+        }
+
+        // 4. Testimonials Carousel
+        const track = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const slides = Array.from(track.children);
+        let currentIndex = 0;
+
+        // Initialize Carousel Dot Indicators
+        slides.forEach((_, idx) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (idx === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                goToSlide(idx);
+            });
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = Array.from(dotsContainer.children);
+
+        function updateCarouselState() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentIndex);
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarouselState();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarouselState();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarouselState();
+        });
+
+        // Auto slide testimonials carousel every 8 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarouselState();
+        }, 8000);
+
+        // 5. FAQ Accordion Interaction
+        document.querySelectorAll('.faq-header').forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Collapse all active accordion tabs
+                document.querySelectorAll('.faq-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // 6. Analytics Event Firing helpers
+        function fireAnalyticsEvent(eventName, params) {
+            console.log(`GA4 Track: Event: ${eventName}`, params);
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        // Add analytics trigger event to floating WhatsApp button
+        document.getElementById('floating-whatsapp-btn').addEventListener('click', () => {
+            fireAnalyticsEvent('whatsapp_button_click', { 'location': 'floating_widget' });
+        });
+
+        // Add analytics trigger event to hero WhatsApp button
+        document.getElementById('hero-whatsapp-btn').addEventListener('click', () => {
+            fireAnalyticsEvent('whatsapp_button_click', { 'location': 'hero_section' });
+        });
+
+        // 7. Lead Form validation, analytics triggers, and WhatsApp Redirection
+        const leadForm = document.getElementById('leadForm');
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Extract Field Values
+            const nameField = document.getElementById('fullName');
+            const phoneField = document.getElementById('phoneNumber');
+            const addressField = document.getElementById('addressArea');
+            const serviceField = document.getElementById('serviceNeeded');
+            const messageField = document.getElementById('userMessage');
+
+            // Form Basic Validation Checks
+            if (!nameField.value.trim()) {
+                alert('Please enter your full name so our triage squad can address you correctly.');
+                nameField.focus();
+                return;
+            }
+
+            const phonePattern = /^\+?([0-9]|[- ()]){7,20}$/;
+            if (!phonePattern.test(phoneField.value.trim())) {
+                alert('Please enter a valid phone number so our team can contact you.');
+                phoneField.focus();
+                return;
+            }
+
+            if (!addressField.value.trim()) {
+                alert('Please provide your address/area so we can identify the closest dispatch depot.');
+                addressField.focus();
+                return;
+            }
+
+            if (!serviceField.value) {
+                alert('Please select a service category to allocate appropriate diagnostic gear.');
+                serviceField.focus();
+                return;
+            }
+
+            // Fire GA4 Event immediately before launching redirection
+            fireAnalyticsEvent('booking_form_submit', {
+                'service_selected': serviceField.value,
+                'user_area': addressField.value
+            });
+
+            // Format WhatsApp pre-filled text string using fields
+            const serviceLabel = serviceField.options[serviceField.selectedIndex].text;
+            const messageText = `Hi, I want pest control service.
+Name: ${nameField.value.trim()}
+Address: ${addressField.value.trim()}
+Service Needed: ${serviceLabel}
+Phone: ${phoneField.value.trim()}
+Instructions: ${messageField.value.trim() || 'None'}`;
+
+            // URL Encode the formatted string
+            const encodedText = encodeURIComponent(messageText);
+
+            // Trigger WhatsApp redirection in a new tab
+            const targetWhatsAppNumber = '18005557378'; // Business Contact Phone
+            const waRedirectUrl = `https://wa.me/${targetWhatsAppNumber}?text=${encodedText}`;
+            
+            window.open(waRedirectUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
